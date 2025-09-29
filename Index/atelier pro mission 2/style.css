@@ -1,0 +1,81 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f8ff;
+    color: #222;
+}
+
+/* Titres */
+h1, h2 {
+    color: #003366;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+/* Tableaux */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Formulaire */
+form {
+    margin-top: 20px;
+    background: #eaf3ff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+input, textarea, select {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+/* Boutons */
+input[type="submit"], input[type="reset"] {
+    width: 100px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+input[type="reset"] {
+    background-color: #cc0000;
+}
+
+input[type="submit"]:hover {
+    background-color: #004999;
+}
+
+input[type="reset"]:hover {
+    background-color: #990000;
+}
