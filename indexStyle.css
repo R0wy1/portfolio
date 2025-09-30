@@ -5,8 +5,9 @@ body{
 }
 
 h1{
-    color: goldenrod; 
+    color: white; 
     text-align: center;
+    background-color: goldenrod;
 }
 
 h2{
