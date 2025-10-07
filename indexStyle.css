@@ -5,13 +5,16 @@ body{
 }
 
 h1{
+    background-color: goldenrod;
     color: white; 
     text-align: center;
-    background-color: goldenrod;
+    text-decoration: underline;
+    border-radius: 20px;
 }
 
 h2{
-    color: white; 
+    color: white;
+    text-decoration: underline; 
 }
 
 a{
@@ -19,9 +22,11 @@ a{
 }
 
 a:hover{
-    background-color: purple;
+    background-color: white;
+    color: black;
 }
 
 ul{
-    color: aliceblue;
+    background-color: goldenrod;
+    color: white;
 }
