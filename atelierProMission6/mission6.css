@@ -90,6 +90,11 @@ nav li:hover .submenu{
     background-color: rgba(220, 220, 220, 0.15);
 }
 
+.menu-index:hover{
+    border-top: 5px solid #4909c0;
+    background-color: rgba(220, 220, 220, 0.15);
+}
+
 nav > ul > li:hover a{
     padding: 15px 30px 20px 30px;
 }
