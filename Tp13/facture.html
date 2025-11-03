@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Facture </title>
+    <link rel="stylesheet" href="facture.css">
+    <script src="facture.js"></script>
+</head>
+<body>
+    <table>
+  <tr>
+    <td> Article : </td>
+    <td> Quantité : </td>
+    <td> Prix : </td>
+    <td> Résultat :</td>
+  </tr>
+
+  <tr>
+    <td> PS5 </td>
+    <td><input type="number" name="t1" id="t1" placeholder="Saisir nombre"></td>
+    <td><input type="number" name="p1" id="p1" placeholder="Saisir nombre"></td>
+    <td><input type="text" name="resultat1" id="resultat1"></td>
+  </tr>
+
+  <tr>
+    <td> Switch 2</td>
+    <td><input type="number" name="t2" id="t2" placeholder="Saisir nombre"></td>
+    <td><input type="number" name="p2" id="p2" placeholder="Saisir nombre"></td>
+    <td><input type="text" name="resultat2" id="resultat2"></td>
+  </tr>
+
+  <tr>
+    <td> PC </td>
+    <td><input type="number" name="t3" id="t3" placeholder="Saisir nombre"></td>
+    <td><input type="number" name="p3" id="p3" placeholder="Saisir nombre"></td>
+    <td><input type="text" name="resultat3" id="resultat3"></td>
+  </tr>
+
+  <tr>
+    <td>&nbsp;</td>
+    <td><button onclick="effacerChamps()"> Effacer </button></td>
+    <td><button onclick="resultat()"> Résultat </button></td>
+    <td><input type="text" name="resultat4" id="resultat4"></td>
+  </tr>
+</table>
+</body>
+</html>
