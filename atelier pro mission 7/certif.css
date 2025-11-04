@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1{
+    color: white; 
+    text-align: center;
+    background-color: goldenrod;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    background-color: orange;
+}
