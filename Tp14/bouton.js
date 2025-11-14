@@ -47,4 +47,24 @@ function login(){
     else{
         window.location.href="non.html"
     }
+
+} 
+
+function connect3(){
+    var i = 0;
+    do{
+        var id= prompt("Nom utilisateur : ");
+        var mdp = prompt("Mot de passe : ");
+        if (id=="admin" && mdp=="admin"){
+        document.write("Bienvenu :" + id);
+        break;
+    } else alert("Accès refusé");
+    i += 1;
+    }
+    while (i < 3);
+    if (i == 3) alert ("Délais dépassé.");
+}
+
+function tab(){
+    window.location.href="tab.html"
 }
