@@ -1,32 +1,69 @@
-body{
+body {
     background-color: black;
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
-h1{
+h1 {
     background-color: goldenrod;
-    color: white; 
+    color: white;
     text-align: center;
     text-decoration: underline;
     border-radius: 20px;
+    padding: 10px 15px;
 }
 
-h2{
+h2 {
     color: white;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
-a{
+nav {
+    background: #222;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
     color: white;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
 }
 
-a:hover{
-    background-color: white;
-    color: black;
+nav ul li ul {
+    position: absolute;
+    background: #333;
+    top: 45px;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.25s ease;
+    z-index: 2000;
 }
 
-ul{
-    background-color: goldenrod;
-    color: white;
+nav ul li:hover ul {
+    height: 220px;
+}
+
+nav ul li ul li a {
+    padding: 10px;
 }
