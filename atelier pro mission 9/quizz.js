@@ -55,43 +55,8 @@ function corrige(){
 }
 
 function efface(){
-    document.getElementById("a1").value = "";
-    document.getElementById("a2").value = "";
-    document.getElementById("a3").value = "";
-
-    document.getElementById("b1").value = "";
-    document.getElementById("b2").value = "";
-    document.getElementById("b3").value = "";
-
-    document.getElementById("c1").value = "";
-    document.getElementById("c2").value = "";
-    document.getElementById("c3").value = "";
-
-    document.getElementById("d1").value = "";
-    document.getElementById("d2").value = "";
-    document.getElementById("d3").value = "";
-
-    document.getElementById("e1").value = "";
-    document.getElementById("e2").value = "";
-    document.getElementById("e3").value = "";
-
-    document.getElementById("f1").value = "";
-    document.getElementById("f2").value = "";
-    document.getElementById("f3").value = "";
-
-    document.getElementById("g1").value = "";
-    document.getElementById("g2").value = "";
-    document.getElementById("g3").value = "";
-
-    document.getElementById("h1").value = "";
-    document.getElementById("h2").value = "";
-    document.getElementById("h3").value = "";
-
-    document.getElementById("i1").value = "";
-    document.getElementById("i2").value = "";
-    document.getElementById("i3").value = "";
-
-    document.getElementById("j1").value = "";
-    document.getElementById("j2").value = "";
-    document.getElementById("j3").value = "";
+    let cases = document.querySelectorAll("input[type='checkbox']");
+    for (let i = 0; i < cases.length; i++) {
+        cases[i].checked = false;
+    }
 }
