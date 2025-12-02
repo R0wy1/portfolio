@@ -19,6 +19,10 @@ h3{
     color: black;
 }
 
+p{
+    color: white;
+}
+
 form{
     background-color: goldenrod;
     padding: 20px;
