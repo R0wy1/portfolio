@@ -1,60 +1,41 @@
-function testqcm(){
-    var a1 = 3 ;
-    var a2 = 0 ;
-    var a3 = 0 ;
+function testqcm() {
+    let score = 0;
 
-    var b1 = 0 ;
-    var b2 = 0.5 ;
-    var b3 = 0.5 ;
+    if (document.getElementById("a1").checked) score += 3;
 
-    var c1 = 0 ;
-    var c2 = 2 ;
-    var c3 = 0 ;
+    if (document.getElementById("b2").checked) score += 0.5;
+    if (document.getElementById("b3").checked) score += 0.5;
 
-    var d1 = 2 ;
-    var d2 = 0 ;
-    var d3 = 2 ;
+    if (document.getElementById("c2").checked) score += 2;
 
-    var e1 = 1.5 ;
-    var e2 = 0 ;
-    var e3 = 1.5 ;
+    if (document.getElementById("d3").checked) score += 4;
 
-    var f1 = 0 ;
-    var f2 = 0 ;
-    var f3 = 4 ;
+    if (document.getElementById("e1").checked) score += 1.5;
+    if (document.getElementById("e3").checked) score += 1.5;
 
-    var g1 = 0 ;
-    var g2 = 2 ;
-    var g3 = 0 ;
+    if (document.getElementById("f3").checked) score += 4;
 
-    var h1 = 0 ;
-    var h2 = 2 ;
-    var h3 = 2 ;
+    if (document.getElementById("g2").checked) score += 2;
 
-    var i1 = 0 ;
-    var i2 = 4 ;
-    var i3 = 0 ;
+    if (document.getElementById("h2").checked) score += 2;
+    if (document.getElementById("h3").checked) score += 2;
 
-    var j1 = 1 ;
-    var j2 = 1 ;
-    var j3 = 1 ;
-    let score = Number(a1) + Number(b2) + Number(b3) + Number(c2) + Number(d1) + Number(d3) + Number(e1) + Number(e3) + Number(f3) + Number(g2) + Number(h2) + Number(h3) + Number(i2) + Number(j1) + Number(j2) + Number(j3);
-    if(score < 15){
-        document.writeln("Ton score est de " + score + "/30, refait le quizz pour avoir plus.");
-    }
-    else if(score > 20){
-      document.writeln("Ton score est de " + score + "/30.");  
-    }
-    else{
-        document.writeln("Bravo tu as eu " + score + "/30."); 
-    }
+    if (document.getElementById("i2").checked) score += 4;
+
+    if (document.getElementById("j1").checked) score += 1;
+    if (document.getElementById("j2").checked) score += 1;
+    if (document.getElementById("j3").checked) score += 1;
+
+    document.body.innerHTML =
+        "<p>Ton score est de " + score + "/30</p>" +
+        "<a href='Quizz.html'>Revenir au quizz</a>";
 }
 
-function corrige(){
-    window.location.href="corrige.html"
+function corrige() {
+    window.location.href = "corrige.html";
 }
 
-function efface(){
+function efface() {
     let cases = document.querySelectorAll("input[type='checkbox']");
     for (let i = 0; i < cases.length; i++) {
         cases[i].checked = false;
