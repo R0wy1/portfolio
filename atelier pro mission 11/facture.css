@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header{
+    background-color: goldenrod;
+    color: black;
+    border-radius: 25px;
+}
+
+input[type="number"]{
+    width: 250px;
+    padding: 8px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type="text"]{
+    width: 250px;
+    padding: 8px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: goldenrod;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover{
+    background-color: purple;
+}
+
+a{
+    background-color: aliceblue;
+}
+
+a:hover{
+    background-color: goldenrod;
+    color: white;
+}

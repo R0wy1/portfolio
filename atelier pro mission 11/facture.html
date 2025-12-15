@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Rowy Belson -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture</title>
+    <link rel="stylesheet" href="facture.css">
+    <script src="facture.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Facture</h1>
+    <input type="text" placeholder="Nom compagnie" id="n1">
+    <input type="text" placeholder="Adresse postale" id="n2">
+  </header>
+
+  <br><br>
+
+  <table>
+    <tr>
+      <td>&nbsp;</td>
+      <td> Destinataire : </td>
+      <td>&nbsp;</td>
+      <td> Envoyer à : </td>
+    </tr>
+
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="text" placeholder="Nom" id="n3"></td>
+      <td>&nbsp;</td>
+      <td><input type="text" placeholder="Nom" id="n4"></td>
+    </tr>
+
+    <tr>
+      <td><td><input type="text" placeholder="Nom de la société" id="n5"></td></td>
+      <td><td><input type="text" placeholder="Nom de la société" id="n6"></td></td>
+    </tr>
+
+    <tr>
+      <td><td><input type="text" placeholder="Adresse postale" id="n7"></td></td>
+      <td><td><input type="text" placeholder="Adresse postale" id="n8"></td></td>
+    </tr>
+
+    <tr>
+      <td><td><input type="text" placeholder="Téléphone" id="n9"></td></td>
+      <td><td><input type="text" placeholder="Téléphone" id="n10"></td></td>
+    </tr>
+
+    <tr>
+      <td><td><input type="text" placeholder="Mail" id="n11"></td></td>
+      <td><td><input type="text" placeholder="Mail" id="n12"></td></td>
+    </tr>
+  </table>
+
+  <br><br>
+
+    <table>
+    <tr>
+    <td>Description :</td>
+    <td>Quantité :</td>
+    <td>Prix unitaire:</td>
+    <td>Total :</td>
+  </tr>
+
+  <tr>
+    <td><input type="text" name="desc" id="d1"></td>
+    <td><input type="number" name="qte" id="t1" placeholder="Saisir nombre"></td>
+    <td><input type="number" name="prix" id="p1" placeholder="Saisir nombre"></td>
+    <td><input type="text" name="tot" id="resultat1"></td>
+  </tr>
+
+  <tr>
+    <td><input type="text" name="desc" id="d2"></td>
+    <td><input type="number" name="qte" id="t2" placeholder="Saisir nombre"></td>
+    <td><input type="number" name="prix" id="p2" placeholder="Saisir nombre"></td>
+    <td><input type="text" name="tot" id="resultat2"></td>
+  </tr>
+
+  <tr>
+    <td><input type="text" name="desc" id="d3"></td>
+    <td><input type="number" name="qte" id="t3" placeholder="Saisir nombre"></td>
+    <td><input type="number" name="prix" id="p3" placeholder="Saisir nombre"></td>
+    <td><input type="text" name="tot" id="resultat3"></td>
+  </tr>
+
+  <tr class="row" id="modeleLigne">
+    <td><input type="text" name="desc" id="d4"></td>
+    <td><input type="number" name="qte" id="t4" placeholder="Saisir nombre"></td>
+    <td><input type="number" name="prix" id="p4" placeholder="Saisir nombre"></td>
+    <td><input type="text" name="tot" id="resultat4"></td>
+  </tr>
+
+  <tr class="lastRow" id="lastLigne">
+    <td><input type="text" name="desc" id="d5"></td>
+    <td><input type="number" name="qte" id="t5" placeholder="Saisir nombre"></td>
+    <td><input type="number" name="prix" id="p5" placeholder="Saisir nombre"></td>
+    <td><input type="text" name="tot" id="resultat5"></td>
+  </tr>
+</table>
+
+  <h2>Solde de <input type="text" name="resultat6" id="resultat6"></h2>
+    
+
+    <button onclick="calcul()">Calculer</button>
+    <button onclick="ajout_ligne()">Ajouter ligne</button>
+    <button onclick="remplir()">Remplir automatiquement</button>
+
+    <button onclick="annule()">Annuler</button>
+
+    <a href="../index.html">Retour sommaire</a>
+</body>
+</html>
