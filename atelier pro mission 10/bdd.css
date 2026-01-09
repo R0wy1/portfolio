@@ -11,10 +11,6 @@ a:hover{
     color: white;
 }
 
-iframe{
-    background-color: goldenrod;
-}
-
 h1{
     background-color: white;
     color: black;
@@ -24,4 +20,5 @@ h1{
 
 h2{
     color: white;
+
 }
